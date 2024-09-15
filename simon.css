@@ -69,6 +69,33 @@ h2 {
   gap: 15px;
 }
 
+/* Start Game Button */
+#start-btn {
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background-color: #e164a7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#start-btn:hover {
+  background-color: #ee5253;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#start-btn:active {
+  background-color: #ff3f3f;
+  transform: scale(1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Buttons */
 .btn {
   height: 120px;

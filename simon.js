@@ -20,15 +20,14 @@ function highscore() {
 
 window.onload = function () {
   highestScore = parseInt(localStorage.getItem("highestScore")) || 0; // Load the highest score from localStorage
-  document.getElementById("highest-score").innerText = ` Highest Score is ${highestScore}`;
+  document.getElementById("highest-score").innerText = `Highest Score: ${highestScore}`;
 };
 
-document.addEventListener("click", function () {
+// Replace keypress event with button click event for game start
+document.getElementById("start-btn").addEventListener("click", function () {
   if (!started) {
-    // Only when the game has not started
     console.log("Game is started");
     started = true;
-
     levelUp();
   }
 });
@@ -70,7 +69,7 @@ function checkAns(idx) {
       setTimeout(levelUp, 1000); // Move to the next level if the user completed the current level
     }
   } else {
-    h2.innerHTML = `Game Over! Your Score is <b>${level}</b> <br> Press any key to Start`;
+    h2.innerHTML = `Game Over! Your Score is <b>${level}</b> <br> Press the button to Start again`;
     document.querySelector("body").style.backgroundColor = "red"; // Flash the screen red on wrong input
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white"; // Reset the background color
