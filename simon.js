@@ -23,7 +23,7 @@ window.onload = function () {
   document.getElementById("highest-score").innerText = ` Highest Score is ${highestScore}`;
 };
 
-document.addEventListener("keypress", function () {
+document.addEventListener("click", function () {
   if (!started) {
     // Only when the game has not started
     console.log("Game is started");
