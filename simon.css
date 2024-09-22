@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: #f5f5f5;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Game Wrapper for Fullscreen Centering */
@@ -54,22 +54,8 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Button Container */
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
-}
-
-.line-one, .line-two {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
 /* Start Game Button */
+
 #start-btn {
   padding: 15px 30px;
   font-size: 1.25rem;
@@ -79,7 +65,8 @@ h2 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
@@ -104,6 +91,22 @@ h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Button Container */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .btn:hover {
