@@ -4,38 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Says Game</title>
-    <link rel="stylesheet" href="simon.css" />
+    <link rel="stylesheet" href="simon1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- Main Game Container -->
-    <div class="game-wrapper">
-      <div class="game-container">
-        <h1>Simon Says Game</h1>
-        <h2>Press the button to start the Game</h2>
+    <!-- Welcome Page Container -->
+    <div class="welcome-wrapper">
+      <div class="welcome-container">
+        <h1>Welcome to Simon Says Game!</h1>
 
-        <!-- High Score Display -->
-        <h3 id="highest-score">Highest Score: 0</h3>
+        <h2>Game Rules:</h2>
+        <ul>
+          <li>Simon will flash a sequence of colors.</li>
+          <li>Repeat the sequence by clicking the correct buttons in the same order.</li>
+          <li>If you repeat the sequence correctly, it will get longer.</li>
+          <li>If you make a mistake, the game ends.</li>
+        </ul>
 
-        <!-- Start Game Button -->
-        <button id="start-btn">Start Game</button>
-
-        <div class="btn-container">
-          <div class="line-one">
-            <div class="btn red" id="red"></div>
-            <div class="btn yellow" id="yellow"></div>
-          </div>
-          <div class="line-two">
-            <div class="btn green" id="green"></div>
-            <div class="btn purple" id="purple"></div>
-          </div>
-        </div>
+        <button id="play-btn">Play</button>
       </div>
     </div>
 
-    <script src="simon.js"></script>
+    <script>
+      document.getElementById("play-btn").onclick = function() {
+        window.location.href = "game.html"; // Redirect to the game page
+      };
+    </script>
   </body>
 </html>
